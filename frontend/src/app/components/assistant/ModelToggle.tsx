@@ -24,11 +24,11 @@ export const MODELS: ModelOption[] = [
     { id: "claude-sonnet-4-6", label: "Claude Sonnet 4.6", group: "Anthropic" },
     { id: "gemini-3.1-pro-preview", label: "Gemini 3.1 Pro", group: "Google" },
     { id: "gemini-3-flash-preview", label: "Gemini 3 Flash", group: "Google" },
-    { id: "gpt-5.5", label: "GPT-5.5", group: "OpenAI" },
-    { id: "gpt-5.4-mini", label: "GPT-5.4 Mini", group: "OpenAI" },
+    { id: "gpt-4.1", label: "GPT-4.1", group: "OpenAI" },
+    { id: "gpt-4o", label: "GPT-4o", group: "OpenAI" },
 ];
 
-export const DEFAULT_MODEL_ID = "gemini-3-flash-preview";
+export const DEFAULT_MODEL_ID = "gpt-4.1";
 
 export const ALLOWED_MODEL_IDS = new Set(MODELS.map((m) => m.id));
 

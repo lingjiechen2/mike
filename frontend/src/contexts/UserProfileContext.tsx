@@ -98,10 +98,14 @@ export function UserProfileProvider({ children }: { children: ReactNode }) {
                 organisation: null,
                 messageCreditsUsed: 0,
                 creditsResetDate: futureResetDate.toISOString(),
-                creditsRemaining: 999999, // temporarily unlimited
+                creditsRemaining: 999999,
                 tier: "Free",
-                tabularModel: "gemini-3-flash-preview",
-                apiKeys: emptyApiKeys(),
+                tabularModel: "gpt-4.1",
+                apiKeys: {
+                    claude: { configured: false, source: null },
+                    gemini: { configured: false, source: null },
+                    openai: { configured: true, source: "env" },
+                },
             });
         } finally {
             setLoading(false);

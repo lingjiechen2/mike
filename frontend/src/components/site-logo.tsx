@@ -39,7 +39,7 @@ export function SiteLogo({
             } ${className}`}
         >
             <MikeIcon size={iconSizes[size]} />
-            <span>Mike</span>
+            <span>Johann</span>
         </h1>
     );
 
